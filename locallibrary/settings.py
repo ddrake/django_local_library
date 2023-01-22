@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY',
                             'l95+%^dbE(9-mB=hicd6viL26,Fz0^-m>7])9{+95VrEX!!`s1')
 
-DEBUG = os.environ.get('DJANGO_DEBUG', '') == 'True'
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 PRODUCTION = os.environ.get('DJANGO_PRODUCTION', '') != 'False'
 
 # MUST BE set in production
