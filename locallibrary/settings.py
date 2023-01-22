@@ -33,7 +33,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 PRODUCTION = os.environ.get('DJANGO_PRODUCTION', '') != 'False'
 
 # MUST BE set in production
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['web-production-7171.up.railway.app', '127.0.0.1']
 
 
 # Application definition
@@ -139,6 +139,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # SECURE_SSL_REDIRECT = PRODUCTION
 # SESSION_COOKIE_SECURE = PRODUCTION
 # CSRF_COOKIE_SECURE = PRODUCTION
+CSRF_TRUSTED_ORIGINS = ['https://web-production-7171.up.railway.app']
 
 # Update database configuration from $DATABASE_URL
 db_from_env = dj_database_url.config(conn_max_age=500)
