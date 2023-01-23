@@ -137,7 +137,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # In production assume https enabled for whole site
 # SECURE_HSTS_SECONDS = 60 if PRODUCTION else 0
 # SECURE_SSL_REDIRECT = PRODUCTION
-SESSION_COOKIE_SECURE = PRODUCTION
+# SESSION_COOKIE_SECURE = PRODUCTION
 CSRF_COOKIE_SECURE = PRODUCTION
 CSRF_TRUSTED_ORIGINS = ['https://web-production-78d2.up.railway.app']
 
