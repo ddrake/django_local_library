@@ -1,4 +1,5 @@
 import datetime
+import logging
 
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required, permission_required
@@ -38,6 +39,7 @@ def index(request):
 
 
 class BookListView(generic.ListView):
+    logging.warning('Watch out!')
     model = Book
     paginate_by = 5
 
