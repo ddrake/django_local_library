@@ -33,7 +33,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 PRODUCTION = os.environ.get('DJANGO_PRODUCTION', '') != 'False'
 
 # MUST BE set in production
-ALLOWED_HOSTS = ['web-production-7171.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['web-production-78d2.up.railway.app', '127.0.0.1']
 
 
 # Application definition
